@@ -4,13 +4,13 @@ Shared coding conventions for Tauri 2 / Rust / React projects.
 
 ## Docs
 
-| File | Purpose |
-| --- | --- |
-| `docs/backend-rules.md` | Rust DDD structure, aggregates, services, repositories |
-| `docs/frontend-rules.md` | React feature layout, components, hooks, navigation |
-| `docs/e2e-rules.md` | WebdriverIO testability rules (selectors, React inputs) |
-| `docs/testing.md` | Testing strategy and patterns (frontend + backend tiers) |
-| `docs/ddd-reference.md` | DDD concept reference for this stack |
+| File                      | Purpose                                                  |
+| ------------------------- | -------------------------------------------------------- |
+| `docs/backend-rules.md`   | Rust DDD structure, aggregates, services, repositories   |
+| `docs/frontend-rules.md`  | React feature layout, components, hooks, navigation      |
+| `docs/e2e-rules.md`       | WebdriverIO testability rules (selectors, React inputs)  |
+| `docs/test_convention.md` | Testing strategy and patterns (frontend + backend tiers) |
+| `docs/ddd-reference.md`   | DDD concept reference for this stack                     |
 
 ## Setup
 
