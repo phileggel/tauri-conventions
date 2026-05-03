@@ -5,7 +5,7 @@
 
 set -euo pipefail
 
-REPO="philippe-eggel/tauri-conventions"
+REPO="phileggel/tauri-conventions"
 BRANCH="main"
 BASE_URL="https://raw.githubusercontent.com/${REPO}/${BRANCH}"
 DOCS_DIR="docs"
