@@ -14,7 +14,7 @@ FILES=(
   "backend-rules.md"
   "frontend-rules.md"
   "e2e-rules.md"
-  "testing.md"
+  "test_convention.md"
   "ddd-reference.md"
 )
 
