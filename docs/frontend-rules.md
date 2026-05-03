@@ -1,6 +1,7 @@
 # Frontend Rules
 
 ⚠️ **AI AGENT MUST NEVER UPDATE THIS DOCUMENT**
+**Rules numbering are indicative and not stable from version to version**
 
 ## Feature Structure
 
