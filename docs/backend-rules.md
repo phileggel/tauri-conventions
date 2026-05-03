@@ -156,7 +156,7 @@ handles atomicity internally via its `save()` method.
 
 ## Repository
 
-**B27** — MUST use sqlx macros for queries. Use `just clean-db` to reset the database if needed.
+**B27** — MUST use sqlx macros for queries. Use your project's DB reset command to wipe and re-migrate if needed.
 
 ## Logging
 
@@ -164,10 +164,13 @@ handles atomicity internally via its `save()` method.
 
 **B29** — MUST use `target:` field when adding a new backend specific log.
 
-**B30** — When using the `target:` field in tracing calls, MUST use the `BACKEND` or `FRONTEND` constant from `crate::core::logger` instead of string literals:
+**B30** — When using the `target:` field in tracing calls, MUST use a named constant instead of a string literal. Define `BACKEND` / `FRONTEND` constants in a shared `core::logger` module and reference them:
 
 ```rust
-use crate::core::logger::BACKEND;
+// Define once in core/logger.rs:
+pub const BACKEND: &str = "backend";
+
+// Use everywhere:
 tracing::info!(target: BACKEND, field = value, "message");
 ```
 
